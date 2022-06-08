@@ -1,7 +1,65 @@
 body {
-    background-color: black;
+  font-family: monospace;
+  background-color: teal;
 }
 
-.zagolovok {
-    color: antiquewhite;
+.plate {
+  position: relative;
+  display: block;
+  width: 1000px;
+  height: 400px;
+  background-color: aquamarine;
 }
+
+.plate::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  width: 100px;
+  height: 100px;
+  background-color: rgb(74, 74, 162);
+}
+
+.red-box {
+  background-color: rgba(151, 81, 81, 0.69);
+  min-height: 200px;
+}
+
+.item:not(:first-child) {
+  margin-left: 100px;
+}
+
+.list {
+  position: relative;
+  z-index: 1;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.item {
+  width: 150px;
+  height: 150px;
+}
+
+.link {
+  width: 100%;
+  height: 100%;
+  background-color: bisque;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: teal;
+}
+
+.link:hover,
+.link:focus {
+  background-color: yellow;
+  fill: black;
+}
+
+/* .icon {
+  fill: inherit;
+} */
