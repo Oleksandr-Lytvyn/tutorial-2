@@ -2,6 +2,22 @@ body {
   font-family: monospace;
   background-color: teal;
 }
+
+.box {
+  width: 400px;
+  height: 200px;
+  padding: 10px;
+  background-color: bisque;
+  /* transform: rotate(-90deg); */
+  position: absolute;
+  top: 200px;
+  left: 50px;
+}
+
+.box[img] {
+  border-radius: 20px;
+}
+
 .modal {
   width: 528px;
   height: 581px;
