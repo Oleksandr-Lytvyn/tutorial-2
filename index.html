@@ -9,50 +9,11 @@
   </head>
   <body>
     <div class="box">
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti nostrum soluta aut illo error quam
-        consequatur facere quaerat qui provident vel libero repellat molestiae mollitia, amet nobis. Libero, vel
-        praesentium.
-      </p>
-      <img src="./images/map1.png" width="50" alt="" />
-    </div>
-    <div class="modal">
-      <p class="mod-title">Modal window</p>
-      <form>
-        <label>
-          your name
-          <input
-            type="name"
-            class="modal-input"
-            name="user-name"
-            placeholder="Vasyl Vasylovich"
-            required
-            minlength="3"
-          />
-        </label>
-        <div class="modal-field">
-          <label for="tel">your phone number</label>
-          <input type="tel" class="modal-input" name="tel" placeholder="+380971111111" required id="tel" />
-        </div>
-        <input type="email" class="modal-input" name="email" placeholder="mail@mail.m" />
-        <div class="modal-field">
-          <label for="user-text">your coment</label>
-          <textarea name="user-text" id="user-text" class="user-text-area"></textarea>
-        </div>
-        <fieldset>
-          <legend>size</legend>
-          <div class="radio-size">
-            <label for="big">big</label>
-            <input type="radio" name="size" id="big" />
-          </div>
-          <div class="radio-size">
-            <label for="small">small</label>
-            <input type="radio" name="size" id="small" />
-          </div>
-        </fieldset>
-        <button type="submit">send</button>
+      <form class="form">
+        <input class="input" type="checkbox" id="check">
+        <label class="label" for="check">choose me</label>
       </form>
-      <button type="button" class="btn-modal-close"></button>
+    </div>
     </div>
   </body>
 </html>
